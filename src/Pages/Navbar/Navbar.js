@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const navItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/'>Projects</Link></li>
-        <li className='font-semibold'><Link to='/'>About Me</Link></li>
-        <li className='font-semibold'><Link to='/'>Skills</Link></li>
-        <li className='font-semibold'><Link to='/'>Contact</Link></li>
+        <li className='font-semibold'><Link to='/project'>Projects</Link></li>
+        <li className='font-semibold'><Link to='/about'>About Me</Link></li>
+        <li className='font-semibold'><Link to='/skills'>Skills</Link></li>
+        <li className='font-semibold'><Link to='/contact'>Contact</Link></li>
+        <li className='font-semibold'><Link to='/blog'>blog</Link></li>
 
     </>
     return (
-        <div className="navbar rounded-lg mt-4 bg-stone-800">
+        <div className="navbar rounded-lg bg-green-800">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
